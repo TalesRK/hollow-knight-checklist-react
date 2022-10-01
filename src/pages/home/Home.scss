@@ -1,0 +1,55 @@
+* {
+    flex: 1;
+}
+
+.home {
+    text-align: center;
+    background-color: #1f1f1f;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+
+    .logo-display {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .image-container {
+            width: 20%;
+            margin: auto;
+        }
+
+        .title {
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 35px;
+        }
+
+        .image {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .image-container {
+            height: 15vh;
+        }
+    }
+
+    .information-group {
+        .information-column {
+            .item-title-container {
+                display: flex;
+                flex: 1;
+                margin-top: 10vh;
+                justify-content: center;
+                align-items: center;
+
+                .right {
+                    transform: scaleX(-1);
+                }
+            }
+        }
+    }
+}
