@@ -266,7 +266,17 @@ export const gameData = {
         ],
     },
     equipment: {
-        label: <>Equipment</>,
+        label: (
+            <>
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://hollowknight.fandom.com/wiki/Category:Items_(Hollow_Knight)"
+                >
+                    Equipment
+                </a>
+            </>
+        ),
         content: [
             {
                 id: 'equipment_mothwing_cloak',
@@ -639,15 +649,15 @@ export const gameData = {
                 id: 'vessel_fragments_sly_geo_550',
                 label: (
                     <>
-                        Bought from{' '}
+                        {'Bought from '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/Sly"
                         >
                             Sly
-                        </a>{' '}
-                        in Dirtmouth for {geoRender}550
+                        </a>
+                        {' in Dirtmouth for'} {geoRender} {' 550'}
                     </>
                 ),
                 percent: 0.3333333,
@@ -656,15 +666,15 @@ export const gameData = {
                 id: 'vessel_fragments_sly_geo_900',
                 label: (
                     <>
-                        Bought from{' '}
+                        {'Bought from '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/Sly"
                         >
                             Sly
-                        </a>{' '}
-                        in Dirtmouth for {geoRender}900
+                        </a>
+                        {' in Dirtmouth for'} {geoRender} {' 900'}
                     </>
                 ),
                 percent: 0.3333333,
@@ -673,23 +683,23 @@ export const gameData = {
                 id: 'vessel_fragments_green_path_queens_garden',
                 label: (
                     <>
-                        Found in{' '}
+                        {'Found in '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/Greenpath"
                         >
                             Greenpath
-                        </a>{' '}
-                        near the inaccessible{' '}
+                        </a>
+                        {' near the inaccessible '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/Queen%27s_Gardens"
                         >
                             Queen's Gardens
-                        </a>{' '}
-                        entrance
+                        </a>
+                        {' entrance'}
                     </>
                 ),
                 percent: 0.3333333,
@@ -698,7 +708,7 @@ export const gameData = {
                 id: 'vessel_fragments_forgotten_crossroads',
                 label: (
                     <>
-                        Left of the lift in{' '}
+                        {'Left of the lift in '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
@@ -714,15 +724,15 @@ export const gameData = {
                 id: 'vessel_fragments_kings_station',
                 label: (
                     <>
-                        Found above{' '}
+                        {'Found above '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/City_of_Tears#Sub-area:_King.27s_Station"
                         >
                             King's Station
-                        </a>{' '}
-                        near a lift
+                        </a>
+                        {' near a lift'}
                     </>
                 ),
                 percent: 0.3333333,
@@ -731,15 +741,15 @@ export const gameData = {
                 id: 'vessel_fragments_deepnest',
                 label: (
                     <>
-                        Found in{' '}
+                        {'Found in '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/Deepnest"
                         >
                             Deepnest
-                        </a>{' '}
-                        above the working tram
+                        </a>
+                        {' above the working tram'}
                     </>
                 ),
                 percent: 0.3333333,
@@ -748,7 +758,7 @@ export const gameData = {
                 id: 'vessel_fragments_stag_nest',
                 label: (
                     <>
-                        Found at the end of{' '}
+                        {'Found at the end of '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
@@ -764,15 +774,15 @@ export const gameData = {
                 id: 'vessel_fragments_seer_essence_700',
                 label: (
                     <>
-                        Given by the{' '}
+                        {'Given by the '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/Seer"
                         >
                             Seer
-                        </a>{' '}
-                        for {essenceRender}700
+                        </a>
+                        {' for'} {essenceRender} {' 700'}
                     </>
                 ),
                 percent: 0.3333333,
@@ -781,15 +791,15 @@ export const gameData = {
                 id: 'vessel_fragments_ancient_basin_geo_3000',
                 label: (
                     <>
-                        Found in the fountain in{' '}
+                        {'Found in the fountain in '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/Ancient_Basin"
                         >
                             Ancient Basin
-                        </a>{' '}
-                        for {geoRender}3000
+                        </a>
+                        {' for'} {geoRender} {' 3000'}
                     </>
                 ),
                 percent: 0.3333333,
@@ -814,15 +824,15 @@ export const gameData = {
                 id: 'mask_shards_sly_geo_150',
                 label: (
                     <>
-                        Bought from{' '}
+                        {'Bought from '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/Sly"
                         >
                             Sly
-                        </a>{' '}
-                        in Dirtmouth for {geoRender}150
+                        </a>
+                        {' in Dirtmouth for'} {geoRender} {' 150'}
                     </>
                 ),
                 percent: 0.25,
@@ -831,15 +841,15 @@ export const gameData = {
                 id: 'mask_shards_sly_geo_500',
                 label: (
                     <>
-                        Bought from{' '}
+                        {'Bought from '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/Sly"
                         >
                             Sly
-                        </a>{' '}
-                        in Dirtmouth for {geoRender}500
+                        </a>
+                        {' in Dirtmouth for'} {geoRender} {' 500'}
                     </>
                 ),
                 percent: 0.25,
@@ -848,15 +858,15 @@ export const gameData = {
                 id: 'mask_shards_sly_geo_800',
                 label: (
                     <>
-                        Bought from{' '}
+                        {'Bought from '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/Sly"
                         >
                             Sly
-                        </a>{' '}
-                        in Dirtmouth for {geoRender}800
+                        </a>
+                        {' in Dirtmouth for'} {geoRender} {' 800'}
                     </>
                 ),
                 percent: 0.25,
@@ -865,15 +875,15 @@ export const gameData = {
                 id: 'mask_shards_sly_geo_1500',
                 label: (
                     <>
-                        Bought from{' '}
+                        {'Bought from '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/Sly"
                         >
                             Sly
-                        </a>{' '}
-                        in Dirtmouth for {geoRender}1500
+                        </a>
+                        {' in Dirtmouth for'} {geoRender} {' 1500'}
                     </>
                 ),
                 percent: 0.25,
@@ -882,15 +892,15 @@ export const gameData = {
                 id: 'mask_shards_brooding_mawlek',
                 label: (
                     <>
-                        Defeating{' '}
+                        {'Defeating '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/Brooding_Mawlek"
                         >
                             Brooding Mawlek
-                        </a>{' '}
-                        far West of the{' '}
+                        </a>
+                        {' far West of the '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
@@ -906,15 +916,15 @@ export const gameData = {
                 id: 'mask_shards_grubfather_grubs_5',
                 label: (
                     <>
-                        Given by{' '}
+                        {'Given by '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/Grubfather"
                         >
                             Grubfather
-                        </a>{' '}
-                        after rescuing 5 grubs
+                        </a>
+                        {' after rescuing 5 grubs'}
                     </>
                 ),
                 percent: 0.25,
@@ -923,23 +933,22 @@ export const gameData = {
                 id: 'mask_shards_forgotten_crossroads',
                 label: (
                     <>
-                        {' '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/Forgotten_Crossroads"
                         >
                             Forgotten Crossroads
-                        </a>{' '}
-                        South of{' '}
+                        </a>
+                        {' south of '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/False_Knight"
                         >
                             False Knight
-                        </a>{' '}
-                        (where there are{' '}
+                        </a>
+                        {' (where there are '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
@@ -947,7 +956,7 @@ export const gameData = {
                         >
                             Goams
                         </a>
-                        )
+                        {')'}
                     </>
                 ),
                 percent: 0.25,
@@ -956,7 +965,7 @@ export const gameData = {
                 id: 'mask_shards_queens_station',
                 label: (
                     <>
-                        In{' '}
+                        {'In '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
@@ -964,7 +973,7 @@ export const gameData = {
                         >
                             Queen's Station
                         </a>
-                        , near East side
+                        {', near East side'}
                     </>
                 ),
                 percent: 0.25,
@@ -973,7 +982,7 @@ export const gameData = {
                 id: 'mask_shards_bretta',
                 label: (
                     <>
-                        Found in{' '}
+                        {'Found in '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
@@ -981,7 +990,7 @@ export const gameData = {
                         >
                             Bretta
                         </a>
-                        's house in Dirtmouth
+                        {"'s house in Dirtmouth"}
                     </>
                 ),
                 percent: 0.25,
@@ -990,15 +999,15 @@ export const gameData = {
                 id: 'mask_shards_greenpath',
                 label: (
                     <>
-                        Found in{' '}
+                        {'Found in '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/Greenpath#Sub-area:_Stone_Sanctuary"
                         >
                             Stone Sanctuary
-                        </a>{' '}
-                        in{' '}
+                        </a>
+                        {' in '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
@@ -1020,8 +1029,8 @@ export const gameData = {
                             href="https://hollowknight.fandom.com/wiki/Royal_Waterways"
                         >
                             Royal Waterways
-                        </a>{' '}
-                        NW section, swim left under main path
+                        </a>
+                        {' NW section, swim left under main path'}
                     </>
                 ),
                 percent: 0.25,
@@ -1030,15 +1039,15 @@ export const gameData = {
                 id: 'mask_shards_deepnest',
                 label: (
                     <>
-                        Found in{' '}
+                        {'Found in '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/Deepnest"
                         >
                             Deepnest
-                        </a>{' '}
-                        through{' '}
+                        </a>
+                        {' through '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
@@ -1046,7 +1055,7 @@ export const gameData = {
                         >
                             Fungal Core
                         </a>
-                        , near{' '}
+                        {', near '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
@@ -1062,7 +1071,7 @@ export const gameData = {
                 id: 'mask_shards_enraged_guardian',
                 label: (
                     <>
-                        Reward from{' '}
+                        {'Reward from '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
@@ -1078,7 +1087,7 @@ export const gameData = {
                 id: 'mask_shards_the_hive',
                 label: (
                     <>
-                        Found behind a wall in{' '}
+                        {'Found behind a wall in '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
@@ -1094,15 +1103,15 @@ export const gameData = {
                 id: 'mask_shards_seer_essence_500',
                 label: (
                     <>
-                        Given by the{' '}
+                        {'Given by the '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/Seer"
                         >
                             Seer
-                        </a>{' '}
-                        for {essenceRender}1500
+                        </a>
+                        {' for'} {essenceRender} {' 1500'}
                     </>
                 ),
                 percent: 0.25,
@@ -1111,15 +1120,15 @@ export const gameData = {
                 id: 'mask_shards_grey_mourner',
                 label: (
                     <>
-                        Given by{' '}
+                        {'Given by '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://hollowknight.fandom.com/wiki/Grey_Mourner"
                         >
                             Grey Mourner
-                        </a>{' '}
-                        in{' '}
+                        </a>
+                        {' in '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
@@ -1727,8 +1736,8 @@ export const gameData = {
                             href="https://hollowknight.fandom.com/wiki/Grimmchild"
                         >
                             Grimmchild
-                        </a>{' '}
-                        /{' '}
+                        </a>
+                        {' / '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
@@ -1750,8 +1759,8 @@ export const gameData = {
                             href="https://hollowknight.fandom.com/wiki/Kingsoul"
                         >
                             Kingsoul
-                        </a>{' '}
-                        /{' '}
+                        </a>
+                        {' / '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"

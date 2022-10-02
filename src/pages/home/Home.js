@@ -23,7 +23,6 @@ function Home() {
             Object.entries(gameData).forEach((category) => {
                 category[1].content.forEach((item) => {
                     if (storedContent.includes(item.id)) {
-                        console.log({ currentPercent, item })
                         currentPercent += item.percent
                         remainingItems--
                     }
@@ -87,12 +86,15 @@ function Home() {
                     <span>{`${remainingItems} item${
                         remainingItems > 0 ? 's' : ''
                     } remaining. `}</span>
-                    <span onClick={() => uncheckAllItems()}>
+                    <button
+                        className="uncheck-button"
+                        onClick={() => uncheckAllItems()}
+                    >
                         {'Uncheck all'}
-                    </span>
+                    </button>
                 </div>
                 <div className="percent">
-                    <span>{currentPercent}% Done</span>
+                    <span>{parseFloat(currentPercent).toFixed(2)}% Done</span>
                 </div>
             </div>
             <div className="information-group">
@@ -103,7 +105,7 @@ function Home() {
                     {renderCategory('nail_arts')}
                     {renderCategory('charms')}
                 </div>
-                <div className="information_column">
+                <div className="information-column">
                     {renderCategory('equipment')}
                     {renderCategory('spells')}
                     {renderCategory('mask_shards')}
@@ -124,25 +126,63 @@ function Home() {
                 </p>
                 <br />
                 <p>
-                    Created by <a href="https://github.com/TalesRK">Thevir</a>{' '}
-                    based on{' '}
-                    <a href="https://www.reddit.com/user/nebulatron">
+                    Created by{' '}
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://github.com/TalesRK"
+                    >
+                        Thevir
+                    </a>{' '}
+                    and{' '}
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://github.com/Tuane97"
+                    >
+                        CatScratch
+                    </a>
+                    {' based on '}
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.reddit.com/user/nebulatron"
+                    >
                         nebulatron
                     </a>
                     's{' '}
-                    <a href="https://hollowknightchecklist.com/">
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://hollowknightchecklist.com/"
+                    >
                         checklist project
                     </a>
                     .
                 </p>
                 <p>
                     Graphics sourced from{' '}
-                    <a href="https://www.vecteezy.com/free-vector/art-nouveau">
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.vecteezy.com/free-vector/art-nouveau"
+                    >
                         Art Nouveau Vector by Vecteezy
                     </a>
-                    , <a href="http://subtlepatterns.com">subtlepatterns.com</a>
+                    ,{' '}
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="http://subtlepatterns.com"
+                    >
+                        subtlepatterns.com
+                    </a>
                     , and the{' '}
-                    <a href="https://hollowknight.fandom.com/wiki/Hollow_Knight_Wiki">
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://hollowknight.fandom.com/wiki/Hollow_Knight_Wiki"
+                    >
                         Fandom Wiki
                     </a>
                     .
@@ -150,10 +190,23 @@ function Home() {
                 <br />
                 <p>
                     This is a fan project; we are not affiliated with{' '}
-                    <a href="https://teamcherry.com.au/">Team Cherry</a>.
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://teamcherry.com.au/"
+                    >
+                        Team Cherry
+                    </a>
+                    .
                 </p>
                 <p>
-                    <a href="http://www.hollowknight.com/">Buy Hollow Knight</a>
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="http://www.hollowknight.com/"
+                    >
+                        Buy Hollow Knight
+                    </a>
                     , it's pretty great.
                 </p>
             </div>

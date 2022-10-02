@@ -1,6 +1,12 @@
 # Hollow Knight Completionist Checklist
 
-A website which provides visitors with a completion checklist for Hollow Knight. View it on [hollowknightchecklist.com](https://hollowknightchecklist.com/).
+A website which provides visitors with a completion checklist for Hollow Knight. View it [here](https://talesrk.github.io/hollow-knight-checklist-react/)!.
+
+This is an open-source project created by Thevir and CatScratch based on nebulatron's checklist project.
+Graphics sourced from Art Nouveau Vector by Vecteezy, subtlepatterns.com, and the Fandom Wiki.
+This is a fan project, we are not affiliated with Team Cherry.
+
+Buy Hollow Knight, it's pretty great!
 
 ## What is this?
 
@@ -17,14 +23,14 @@ There are several features which would be nice to have, among them:
 
 ## Todo
 
-[ok] corrigir mark shards
-[ok] corrigir charms com 2 tipos / 2 urls
-[ok] calcular percentuais
-[ok] calcular contador
-[ok] carregar checkbox salvos
-[ok] substituir [geo] por ícone de geo
-[ok] adicionar footer
-[ok] componentizar
-embelezar
-publicar página
-poster no subreddit
+-   [ok] corrigir mark shards
+-   [ok] corrigir charms com 2 tipos / 2 urls
+-   [ok] calcular percentuais
+-   [ok] calcular contador
+-   [ok] carregar checkbox salvos
+-   [ok] substituir [geo] por ícone de geo
+-   [ok] adicionar footer
+-   [ok] componentizar
+-   [ok] embelezar
+-   [ok] publicar página
+-   postar no subreddit

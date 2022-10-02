@@ -1,20 +1,42 @@
+@font-face {
+    font-family: 'Cinzel';
+    src: url('../../static/fonts/cinzel-bold-webfont.woff2');
+}
+
+@font-face {
+    font-family: 'Caladea';
+    src: url('../../static/fonts/caladea-regular-webfont.woff2');
+}
+
 * {
-    flex: 1;
+    box-sizing: border-box;
+}
+
+a,
+input {
+    cursor: pointer;
+    color: white;
 }
 
 .home {
-    text-align: center;
-    background-color: #1f1f1f;
-    font-size: 25px;
     color: white;
+    font-family: 'Cinzel';
+    font-size: 25px;
+    text-align: center;
+    background-image: url(../../static/img/background-hk.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     padding: 2vh;
+    gap: 3vh;
 
     .logo-display {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        gap: 10px;
 
         .image-container {
             width: 20%;
@@ -22,9 +44,26 @@
         }
 
         .title {
-            font-family: monospace;
             font-weight: bold;
             font-size: 35px;
+        }
+
+        .subtitle {
+            font-size: 0.8em;
+
+            .uncheck-button {
+                background: none;
+                border: none;
+                font-size: inherit;
+                text-decoration: underline;
+                cursor: pointer;
+                font-family: inherit;
+                color: inherit;
+            }
+        }
+
+        .percent {
+            font-size: 2em;
         }
 
         .image {
@@ -33,23 +72,95 @@
         }
 
         .image-container {
-            height: 15vh;
         }
     }
 
     .information-group {
-        .information-column {
-            .item-title-container {
-                display: flex;
-                flex: 1;
-                margin-top: 10vh;
-                justify-content: center;
-                align-items: center;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
 
-                .right {
-                    transform: scaleX(-1);
+        .information-column {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .item-container {
+                background-color: rgba(0, 0, 0, 0.6);
+                border-radius: 10px;
+                padding-top: 2vh;
+                padding-bottom: 2vh;
+                box-shadow: 0 0 5px 0px rgb(108 108 108);
+
+                .item-title-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 5vh;
+                    gap: 5px;
+                    font-size: 30px;
+                    font-weight: bold;
+                    margin-bottom: 15px;
+                    padding-right: 2vh;
+                    padding-left: 2vh;
+
+                    .flourish {
+                        height: 50%;
+                    }
+
+                    .right {
+                        transform: scaleX(-1);
+                    }
+                }
+
+                .item-body {
+                    font-family: 'Caladea';
+                    display: flex;
+                    flex-direction: column;
+                    text-align: start;
+
+                    .subitem-content {
+                        display: flex;
+                        gap: 15px;
+                        padding: 10px;
+
+                        .subitem-title {
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            white-space: pre-wrap;
+                        }
+                    }
                 }
             }
         }
     }
+}
+.subitem-content:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.item-image.essence {
+    height: 1.5em;
+}
+.item-image.geo {
+    height: 1.1em;
+}
+.item-image.pale-ore {
+    height: 1em;
+}
+
+.footer {
+    text-shadow: 0 0 10px black;
+    font-family: caladea;
+}
+
+a:-webkit-any-link {
+    color: inherit;
+}
+
+input:checked ~ .subitem-title {
+    text-decoration: line-through;
+    color: gray;
 }
